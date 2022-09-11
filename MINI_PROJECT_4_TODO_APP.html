@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MINI_PROJECT_4_TODO_APP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .main-row{
+    height: 200px;
+}
+.main-col{
+    max-width: 600px;
+    min-height: 400px;
+}
+.todo-done{
+    text-decoration: line-through;
+}
+body{
+    background-color: antiquewhite;
+}
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="row justify-content-center align-items-center main-row">
+      <div class="col shadow main-col bg-white">
+        <div class="row bg-primary text-white">
+          <div class="col  p-2">
+            <h4>TODO APP</h4>
+          </div>
+        </div>
+        <div class="row justify-content-between text-white p-2">
+          <div class="form-group flex-fill mb-2">
+            <input id="todo-input" type="text" class="form-control" value="">
+          </div>
+          <button type="button" onclick="CreateTodo();" class="btn btn-success mb-2 ml-2" style="width:120px">Add todo</button>
+          <button type="button" onclick="EditTodo();" class="btn btn-warning mb-2 ml-2" style="width:120px">Edit todo</button>
+          <button type="button" onclick="DeleteTodo();" class="btn btn-danger mb-2 ml-2" style="width:120px">Delete todo</button>
+        </div>
+        <div class="row justify-content-between text-white p-2">
+        <div class="form-group flex-fill mb-2">
+            <input id="todo-input" type="text" class="form-control" value="">
+          </div>
+          <button type="button" onclick="CreateTodo();" class="btn btn-success mb-2 ml-2"style="width:120px">Add todo</button>
+          <button type="button" onclick="EditTodo();" class="btn btn-warning mb-2 ml-2" style="width:120px">Edit todo</button>
+          <button type="button" onclick="DeleteTodo();" class="btn btn-danger mb-2 ml-2" style="width:120px">Delete todo</button>
+        </div>
+        </div>
+       
+     <div class="row" id="todo-container">
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
